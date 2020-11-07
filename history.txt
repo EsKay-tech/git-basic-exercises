@@ -1,0 +1,393 @@
+    1  mkdir git-basic-exercises
+    2  cd git-basic-exercises
+    3  la -a
+    4  ls -a
+    5  git init
+    6  ls -a
+    7  git status
+    8  touch README.md
+    9  ls -a
+   10  git add .
+   11  git status
+   12  git rm README.md
+   13  git rm --cached README.md
+   14  git status
+   15  git add .
+   16  git status
+   17  git commit -m "initial commit"
+   18  git log
+   19  nano README.md
+   20  cat README.md
+   21  git status
+   22  git add .
+   23  git add .
+   24  git status
+   25  git commit -m "second commit"
+   26  nano README.md
+   27  git commit -m "third commit"
+   28  git add .
+   29  git status
+   30  git commit -m "third commit"
+   31  git log
+   32  git checkout 
+   33  git checkout 8eef1f9ed37d4f337815f73c8f507acb7974bae6
+   34  cat README.md
+   35  git checkout master
+   36  cat README.md
+   37  git branch
+   38  git branch milkshake-flavours
+   39  git branch
+   40  git checkout milkshake-flavours
+   41  git branch
+   42  nano milkshakes.md
+   43  git status
+   44  git add .
+   45  git status
+   46  git commit -m "added initial flavours"
+   47  git status
+   48  git log
+   49  git checkout master
+   50  git log
+   51  git branch history
+   52  git checkout history
+   53  git log
+   54  git branch
+   55  history > history.txt
+   56  ls -a
+   57  git add .
+   58  git commit -m "added history"
+   59  git log
+   60  git checkout milkshake-flavours
+   61  git log
+   62  nano README.md
+   63  git add .
+   64  git commit -m "readme changes"
+   65  git checkout history
+   66  cat README.md
+   67  rm README.md
+   68  echo "booya" > README.md
+   69  git add .
+   70  git commit -m "rewrote readme"
+   71  git checkout master
+   72  cat README.md
+   73  git branch
+   74  git checkout master
+   75  ls
+   76  git log
+   77  git checkout milkshake-flavours
+   78  ls
+   79  git log
+   80  git checkout bfa9d15fb622736079160b45699d4d72658e26d1
+   81  ls -a
+   82  git log
+   83  cat README.md
+   84  git commit --amend
+   85  git add .
+   86  git status
+   87  git log
+   88  git checkout history
+   89  git checkout 0bdbe680d82701016f98d3ee40f1ad518b0ddd5b
+   90  git status
+   91  git add .
+   92  git status
+   93  git add .
+   94  git commit -m "wrong message for commit"
+   95  git checkout history
+   96  git log
+   97  git checkout master
+   98  ls
+   99  git log
+  100  git checkout milkshake-flavours
+  101  ls
+  102  git log
+  103  git checkout history
+  104  ls
+  105  git log
+  106  git checkout master
+  107  git merge milkshake-flavours
+  108  ls
+  109  git merge history
+  110  git status
+  111  git add .
+  112  git status
+  113  ls
+  114  git checkout history
+  115  git status
+  116  git commit -a 
+  117  git status
+  118  git checkout history
+  119  log
+  120  git log
+  121  git checkout milkshake-flavours
+  122  git log
+  123  git checkout history
+  124  git merge master
+  125  git status
+  126  git checkout master
+  127  git log
+  128  git merge milkshake-flavours
+  129  git remote add origin https://github.com/EsKay-tech/git-basic-exercises.git
+  130  git branch -M main
+  131  git push -u origin main
+  132  git push origin history
+  133  git push origin milkshake-flavours
+  134  cd ../
+  135  git clone https://github.com/Umuzi-org/tech-department.git
+  136  cd tech-department
+  137  git branch
+  138  git log
+  139  git branch -a
+  140  git checkout project/git-basic-exercises
+  141  git checkout project
+  142  git checkout git-basic-exercises
+  143  git branch -a
+  144  git remote -v
+  145  git branch -b project/git-basic-exercises
+  146  git checkout -b project/git-basic-exercises
+  147  git remote -v
+  148  git log
+  149  git checkout git-basic-exercises
+  150  cd ../
+  151  cd git-basic-exercises
+  152  git log
+  153  cd ../
+  154  mkdir this-will-be-another-repo
+  155  li -a
+  156  ls -a
+  157  ls
+  158  git status
+  159  git init
+  160  mkdir this-will-be-another-repo
+  161  git status
+  162  cd this-will-be-another-repo
+  163  git init
+  164  touch README.md
+  165  git add .
+  166  git commit -m "Multiple Repo"
+  167  cd git-basic-exercises
+  168  cd ../
+  169  cd git-basic-exercises
+  170  git log
+  171  touch ignore-me.db
+  172  git status
+  173  nano .gitignore
+  174  git status
+  175  mkdir large-directory-that-should-be-local-only
+  176  cd large-directory-that-should-be-local-only
+  177  touch readme.md
+  178  nano readme.md
+  179  git status
+  180  cd git-basic-exercises
+  181  cd ../
+  182  cd git-basic-exercises
+  183  git status
+  184  nano .gitignore
+  185  git status
+  186  clear
+  187  cd ../
+  188  clear
+  189  git clone https://github.com/EsKay-tech/demo-repo.git
+  190  cd demo-repo
+  191  ls -a
+  192  git status
+  193  la
+  194  nano README.md
+  195  git status
+  196  touch index.html
+  197  nano index.html
+  198  git status
+  199  git add .
+  200  git status
+  201  git add README.md
+  202  git status
+  203  git restore --staged README.md
+  204  git status
+  205  git add README.md
+  206  git status
+  207  git add .
+  208  git status
+  209  git commit -m "Added index.html" -m "Some Description"
+  210  git config --global user.email "karabo.mn33@gmail.com"
+  211  git config --global user.name "Sean Mohomane"
+  212  git log
+  213  git commit -m "Added index.html" -m "Some Description"
+  214  git push origin main
+  215  git clone https://github.com/EsKay-tech/git-basic-exercises.git
+  216  ls -a
+  217  nano README.md
+  218  cd git-basic-exercises
+  219  git status
+  220  ls -a
+  221  nano README.md
+  222  nano history.txt
+  223  cd demo-repo
+  224  git clone https://github.com/EsKay-tech/demo-repo.git
+  225  git status
+  226  git restore --staged https://github.com/EsKay-tech/git-basic-exercises.git
+  227  git checkout demo-repo
+  228  cd ../
+  229  ls -a
+  230  rmdir git-basic-exercises
+  231  cd ../
+  232  mkdir demo-repo2
+  233  cd demo-repo2
+  234  touch README.md
+  235  nano README.md
+  236  nano README.md
+  237  git init
+  238  git status
+  239  git add README.md
+  240  git status
+  241  git commit -m "Created README"
+  242  git push origin master
+  243  git remote add origin https://github.com/EsKay-tech/demo-repo2.git
+  244  git remote -v
+  245  git push -u origin master
+  246  git checkout demo-repo
+  247  cd ../
+  248  git checkout demo-repo
+  249  git clone https://github.com/EsKay-tech/demo-repo.git
+  250  cd demo-repo
+  251  git status
+  252  git add .
+  253  git rm --cached git-basic-exercises
+  254  git rm -f git-basic-exercises
+  255  git status
+  256  git add .
+  257  git status
+  258  ls -a
+  259  git add .
+  260  git status
+  261  git log
+  262  git branch
+  263  git branch feature
+  264  git branch
+  265  git checkout feature 
+  266  git status
+  267  git restore --staged git-basic-exercises
+  268  git status
+  269  git add .
+  270  git rm --cached git-basic-exercises/
+  271  git rm -f git-basic-exercises/
+  272  git status
+  273  git rm -f git-basic-exercises/
+  274  git rm --cached git-basic-exercises/
+  275  nano README.md
+  276  git status
+  277  git add git-basic-exercises
+  278  git status
+  279  git add git-basic-exercises/
+  280  git add git
+  281  git add git-basic-exercises/
+  282  git status
+  283  git status
+  284  ls -a
+  285  git commit -m "A lot .." -m "updated readme and deleted the git exercises"
+  286  git status
+  287  git add .
+  288  git status
+  289  git commit -m "A lot .." -m "updated readme and deleted the git exercises"
+  290  git status
+  291  git diff feature 
+  292  nano feature
+  293  git diff
+  294  git diff README.md
+  295  git push -u origin feature 
+  296  git pull origin master
+  297  git checkout master
+  298  git checkout main
+  299  git pull 
+  300  cat README.md
+  301  git branch
+  302  git branch -d feature 
+  303  git branch
+  304  git checkout -b quick-test
+  305  nano index.html
+  306  git status
+  307  git diff
+  308  git commit -am "added world"
+  309  git checkout master
+  310  cat index.html
+  311  git checkout master
+  312  git checkout main
+  313  nano index.html
+  314  git checkout quick-test
+  315  git commit -am "added there"
+  316  git checkout quick-test
+  317  git diff main
+  318  git merge main
+  319  git diff
+  320  git nano index.html
+  321  nano index.html
+  322  git status
+  323  git commit -am "merged in master"
+  324  nano README.md
+  325  git status
+  326  git add README.md
+  327  git status
+  328  git reset README.md
+  329  git status
+  330  git commit -am "added install step"
+  331  git reset HEAD~1
+  332  git status
+  333  git diff
+  334  git lof
+  335  git log
+  336  clear
+  337  git ~
+  338  cd ../
+  339  git clone https://github.com/EsKay-tech/git-basic-exercises.git
+  340  git checkout master
+  341  cd git-basic-exercises/
+  342  git checkout master
+  343  git checkout main
+  344  ls
+  345  cd ../
+  346  mkdir git-basic-exercises
+  347  cd git-basic-exercises/
+  348  ls -a
+  349  git init
+  350  ls -a
+  351  git status
+  352  touch README.md
+  353  ls -a
+  354  git log
+  355  git add README.md
+  356  git status
+  357  git rm --cached README.md
+  358  git status
+  359  git add README.md 
+  360  git status
+  361  git commit -m "initial commit"
+  362  git log
+  363  nano README.md 
+  364  cat README.md 
+  365  git status
+  366  git commit -am "second commit"
+  367  nano README.md 
+  368  cat README.md 
+  369  git commit -am "third commit"
+  370  git log
+  371  cd ee678f797b8dd1e4d17969a3ae9be0e7198d6080
+  372  git checkout ee678f797b8dd1e4d17969a3ae9be0e7198d6080
+  373  cat README.md 
+  374  git checkout master
+  375  cat README.md 
+  376  git branch
+  377  git branch milkshake-flavours
+  378  git checkout milkshake-flavours 
+  379  git branch
+  380  nano milkshakes.md
+  381  git status
+  382  git commit -am "added initial flavours"
+  383  git add milkshakes.md 
+  384  git commit -m "added initial flavours"
+  385  git log
+  386  git checkout master 
+  387  git branch history
+  388  git branch
+  389  got log
+  390  git log
+  391  git checkout history 
+  392  git log
+  393  history > history.txt
